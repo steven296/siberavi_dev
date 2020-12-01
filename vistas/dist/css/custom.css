@@ -1,0 +1,8 @@
+.login-box-msg {
+	font-size: 24px;
+    font-weight: 600;
+}
+
+.login-box-msg, .register-box-msg {
+	padding: 10px 20px 40px 20px !important;
+}
