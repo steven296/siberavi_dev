@@ -17,8 +17,6 @@ class ModeloLogin{
 
 		$stmt -> execute();
 
-		//return $stmt -> fetch();
-
 		if($stmt->fetch()){
 
 			return "ok";	

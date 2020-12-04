@@ -15,9 +15,7 @@
 		<!-- logo normal -->
 
 		<span class="logo-lg">
-			
-			<img src="vistas/img/plantilla/logo-blanco-lineal.png" class="img-responsive" style="padding:10px 0px">
-
+			TOPICOS
 		</span>
 
 	</a>

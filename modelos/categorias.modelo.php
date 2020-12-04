@@ -35,16 +35,15 @@ class ModeloCategorias{
 
 	static public function mdlMostrarCategorias(){
 
-		$stmt = Conexion::conectar()->prepare("SELECT * FROM categorias");
+		try {
+			$stmt = Conexion::conectar()->prepare("SELECT * FROM categorias");
 
-		if(!$stmt->execute()){
+			$stmt->execute();
+			return $stmt -> fetchAll();
 
+		}catch (Exception $e){
 			return "error";
-		
 		}
-
-		return $stmt -> fetchAll();
-
 	}
 
 	/*=============================================
@@ -85,9 +84,6 @@ class ModeloCategorias{
 		
 		}
 
-		$stmt->close();
-		$stmt = null;
-
 	}
 
 	/*=============================================
@@ -109,11 +105,6 @@ class ModeloCategorias{
 			return "error";	
 
 		}
-
-		$stmt -> close();
-
-		$stmt = null;
-
 	}
 
 }

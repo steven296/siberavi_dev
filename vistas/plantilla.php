@@ -11,9 +11,8 @@ session_start();
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Inventory System</title>
+  <title>TOPICOS</title>
 
-  <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
   <link rel="icon" href="vistas/img/plantilla/icono-negro.png">
@@ -73,10 +72,6 @@ session_start();
 
 </head>
 
-<!--=====================================
-CUERPO DOCUMENTO
-======================================-->
-
 <body class="hold-transition skin-blue sidebar-mini login-page">
  
   <?php
@@ -84,10 +79,6 @@ CUERPO DOCUMENTO
   if(isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok"){
 
    echo '<div class="wrapper">';
-
-    /*=============================================
-    CABEZOTE
-    =============================================*/
 
     include "modulos/cabezote.php";
 
